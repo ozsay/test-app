@@ -17,3 +17,5 @@ dist
 
 # Base44 App Config
 .app.json*
+
+.playwright-mcp
