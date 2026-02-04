@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Base44Logo } from "@/components/Base44Logo";
+import { TaskCompletionCard } from "@/components/TaskCompletionCard";
 import { Plus, Trash2, CheckCircle2 } from "lucide-react";
 
 const Task = base44.entities.Task;
@@ -68,6 +69,11 @@ export default function App() {
               {completedCount} of {totalCount} completed
             </p>
           )}
+        </div>
+
+        {/* Stats Card */}
+        <div className="mb-8">
+          <TaskCompletionCard />
         </div>
 
         {/* Add Task Form */}

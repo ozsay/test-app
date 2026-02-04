@@ -1,0 +1,4 @@
+{
+  "name": "get-task-completion",
+  "entry": "index.ts"
+}
