@@ -5,7 +5,7 @@
   "tool_configs": [
     {
       "entity_name": "Task",
-      "allowed_operations": ["read", "create", "update", "delete"]
+      "allowed_operations": ["read", "create", "delete"]
     }
   ]
 }
