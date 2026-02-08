@@ -17,12 +17,6 @@ Deno.serve(async (req) => {
 
     console.log(`Total tasks: ${totalTasks}, Completed tasks: ${completedTasks}, Completion percentage: ${completionPercentage}`);
 
-    if (completionPercentage < 50) {
-      throw new Error("Completion percentage is less than 50%");
-
-    }
-
-    console.log(`Tasks: ${JSON.stringify(tasks)}`);
     return Response.json({
       totalTasks,
       completedTasks,

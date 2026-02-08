@@ -1,0 +1,4 @@
+{
+  "name": "notify-slack-task-completed",
+  "entry": "index.ts"
+}

@@ -61,6 +61,14 @@ export default function App() {
 
   const toggleTask = async (id, completed) => {
     await Task.update(id, { completed });
+    if (completed) {
+      const task = tasks.find((t) => t.id === id);
+      if (task) {
+        base44.functions.invoke("notify-slack-task-completed", {
+          taskTitle: task.title,
+        }).catch(() => {});
+      }
+    }
     fetchTasks();
   };
 
