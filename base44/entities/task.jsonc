@@ -12,5 +12,11 @@
       "description": "Whether the task is completed"
     }
   },
-  "required": ["title"]
+  "required": ["title"],
+  "rls": {
+    "create": true,
+    "read": true,
+    "update": true,
+    "delete": { "data.completed": true }
+  }
 }
